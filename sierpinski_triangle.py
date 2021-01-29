@@ -4,7 +4,6 @@ Nov 15, 2020
 
 Description:    Draws the Sierpinski Triangle fractal by using the turtle
                 module and recursion.
-
 """
 
 import turtle
@@ -20,7 +19,7 @@ w = 600
 screen = turtle.Screen()
 screen.setup(width=w, height=h)
 
-# makes screen not resizable
+# makes screen not re-sizable
 screen.cv._rootwindow.resizable(False, False)
 
 
@@ -29,7 +28,7 @@ def draw_triangle(level, ax, ay, bx, by, cx, cy):
     using a recursive function that draws 3 new triangles based on the midpoints of the old triangle.
 
     Args:
-        level: specifiy which iteration to draw the sierpinski triangle.
+        level: specify which iteration to draw the sierpinski triangle.
 
         ax, ay, bx, by, cx, cy: x and y coordinates of the three points needed to form a triangle
     """
@@ -71,7 +70,7 @@ def draw_triangle(level, ax, ay, bx, by, cx, cy):
 # sets turtle speed to max
 drawer.speed("fastest")
 
-# askes user for the iteration of sierpinski triangle
+# asks user for the iteration of sierpinski triangle
 iteration = int(
     input("What iteration of the sierpinski triangle would you like to see?"))
 
